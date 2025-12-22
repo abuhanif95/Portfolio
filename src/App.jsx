@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "./components/Header";
 
 const App = () => {
-  return <di>Set up Complete</di>;
+  return (
+    <div className="bg-amber-600">
+      <Header />
+    </div>
+  );
 };
 
 export default App;
