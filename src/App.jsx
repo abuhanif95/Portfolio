@@ -1,10 +1,15 @@
 import React from "react";
-import Header from "./components/Header";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="bg-amber-600">
-      <Header />
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 };
